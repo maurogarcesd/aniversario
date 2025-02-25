@@ -5,7 +5,7 @@ const jsonFile = "images.json";
 const galleryContainer = document.querySelector(".gallery");
 
 // Número de fotos a mostrar (6 para 2 filas de 3 fotos, 8 para 2 filas de 4 fotos)
-const photosToShow = 6; // Cambia a 8 si quieres 4 fotos por fila
+const photosToShow = 4; // Cambia a 8 si quieres 4 fotos por fila
 
 // Intervalo de tiempo para rotar las imágenes (en milisegundos)
 const rotationInterval = 5000; // 5 segundos
