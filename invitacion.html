@@ -21,9 +21,8 @@
             height: 100%;
             border: none;
         }
-         
-
     
+        
         nav {
     background-color: #004a99;
     padding: 10px 0;
@@ -163,7 +162,6 @@ nav ul li a:hover {
             border-radius: 5px;
             border-left: 4px solid #004a99; /* Borde izquierdo azul */
         }
-    
     </style>
 </head>
 <body>
@@ -177,7 +175,7 @@ nav ul li a:hover {
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="programacion.html">Programación</a></li>
-            <li><a href="invitacion.html">Carta de Invitación</a></li>
+            <li><a href="carta-invitacion.html">Carta de Invitación</a></li>
         </ul>
     </nav>
 
@@ -188,8 +186,14 @@ nav ul li a:hover {
 
             <!-- Contenedor para el PDF -->
             <div class="pdf-container">
+                <!-- Asegúrate de que la ruta del PDF sea correcta -->
                 <iframe src="invitacion.pdf"></iframe>
             </div>
+
+            <!-- Mensaje alternativo si el PDF no se carga -->
+            <p style="color: red; font-style: italic;">
+                Si no puedes ver el PDF, <a href="invitacion.pdf" download>descárgalo aquí</a>.
+            </p>
         </div>
     </div>
 
