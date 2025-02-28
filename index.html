@@ -6,143 +6,7 @@
     <title>Encuentro 60 Años Efrén Cardona Chica y el Camilo Torres, volviendo a nuestras raices</title>
     <!-- Importar una fuente de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #004a99;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-family: 'Pacifico', cursive;
-            font-size: 4.5rem;
-            margin: 0;
-            line-height: 1.2;
-        }
-        header p {
-            font-size: 1.5rem;
-            margin: 10px 0 0;
-            font-weight: 300;
-        }
-        nav {
-            background-color: #004a99;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        nav ul li a:hover {
-            background-color: #003366;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #004a99;
-            font-size: 2rem;
-            margin-top: 0;
-        }
-        a {
-            color: #004a99;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .info-section {
-            margin-bottom: 20px;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #004a99;
-            color: white;
-            margin-top: 20px;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-            justify-content: center;
-        }
-        .gallery img {
-            width: calc(33.33% - 10px); /* 3 fotos por fila (ajusta a 25% para 4 fotos) */
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-        }
-        .highlight {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 20px 0;
-            text-align: center;
-            font-size: 1.2rem;
-            color: #856404;
-        }
-        .highlight-saludo {
-            background-color: #e3f2fd; /* Fondo azul claro */
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border: 2px solid #004a99; /* Borde azul */
-        }
-        .highlight-saludo h2 {
-            color: #004a99; /* Color azul para el título */
-            font-size: 2.2rem;
-            margin-top: 0;
-        }
-        .highlight-saludo p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-        .mensaje-emotivo {
-            font-style: italic;
-            color: #004a99; /* Color azul para el mensaje emotivo */
-            margin-top: 15px;
-            padding: 10px;
-            background-color: #ffffff; /* Fondo blanco */
-            border-radius: 5px;
-            border-left: 4px solid #004a99; /* Borde izquierdo azul */
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -153,8 +17,9 @@
     <!-- Menú de Navegación -->
     <nav>
         <ul>
-            <li><a href="#programacion">Programación</a></li>
-            <li><a href="#carta-invitacion">Carta de Invitación</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="programacion.html">Programación</a></li>
+            <li><a href="carta-invitacion.html">Carta de Invitación</a></li>
         </ul>
     </nav>
 
@@ -202,28 +67,6 @@
             </ul>
             <p>📩 Envíalo por <a href="https://wa.me/573206556477" target="_blank">WhatsApp al 3206556477</a></p>
             <p class="mensaje-emotivo">💬 <strong>¡Tu saludo es importante!</strong> Aunque no puedas estar físicamente, tu mensaje será una forma especial de conectarte con tus compañeros y revivir esos momentos inolvidables. ¡No dejes que la distancia te impida ser parte de esta celebración!</p>
-        </div>
-
-        <!-- Sección de Programación -->
-        <div id="programacion" class="info-section">
-            <h2>Programación del Evento</h2>
-            <p>Aquí encontrarás la agenda detallada del encuentro de egresados. ¡No te pierdas ninguna de las actividades!</p>
-            <ul>
-                <li>⏰ 7:00 p.m. - Recepción y bienvenida</li>
-                <li>⏰ 7:30 p.m. - Acto cultural</li>
-                <li>⏰ 8:00 p.m. - Cena y brindis</li>
-                <li>⏰ 9:00 p.m. - Baile y música en vivo</li>
-            </ul>
-        </div>
-
-        <!-- Sección de Carta de Invitación -->
-        <div id="carta-invitacion" class="info-section">
-            <h2>Carta de Invitación</h2>
-            <p>Queridos egresados, exdocentes y amigos de la Institución Educativa Efrén Cardona Chica y el Instituto Camilo Torres:</p>
-            <p>Con gran alegría los invitamos a celebrar los 60 años de nuestra querida institución. Este encuentro será una oportunidad única para reencontrarnos, recordar viejos tiempos y crear nuevos recuerdos.</p>
-            <p>Esperamos contar con su presencia en este evento tan especial. ¡No falten!</p>
-            <p>Atentamente,</p>
-            <p>El comité organizador.</p>
         </div>
 
         <div class="info-section">
