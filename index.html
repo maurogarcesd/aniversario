@@ -31,6 +31,34 @@
             margin: 10px 0 0;
             font-weight: 300;
         }
+        nav {
+            background-color: #004a99;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #003366;
+        }
         .container {
             width: 80%;
             margin: 20px auto;
@@ -122,6 +150,14 @@
         <p>Celebrando 60 años de la Institución Educativa Efrén Cardona Chica y el Instituto Camilo Torres</p>
     </header>
 
+    <!-- Menú de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#programacion">Programación</a></li>
+            <li><a href="#carta-invitacion">Carta de Invitación</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <div class="info-section">
             <h2>¡Una celebración para todos!</h2>
@@ -168,6 +204,28 @@
             <p class="mensaje-emotivo">💬 <strong>¡Tu saludo es importante!</strong> Aunque no puedas estar físicamente, tu mensaje será una forma especial de conectarte con tus compañeros y revivir esos momentos inolvidables. ¡No dejes que la distancia te impida ser parte de esta celebración!</p>
         </div>
 
+        <!-- Sección de Programación -->
+        <div id="programacion" class="info-section">
+            <h2>Programación del Evento</h2>
+            <p>Aquí encontrarás la agenda detallada del encuentro de egresados. ¡No te pierdas ninguna de las actividades!</p>
+            <ul>
+                <li>⏰ 7:00 p.m. - Recepción y bienvenida</li>
+                <li>⏰ 7:30 p.m. - Acto cultural</li>
+                <li>⏰ 8:00 p.m. - Cena y brindis</li>
+                <li>⏰ 9:00 p.m. - Baile y música en vivo</li>
+            </ul>
+        </div>
+
+        <!-- Sección de Carta de Invitación -->
+        <div id="carta-invitacion" class="info-section">
+            <h2>Carta de Invitación</h2>
+            <p>Queridos egresados, exdocentes y amigos de la Institución Educativa Efrén Cardona Chica y el Instituto Camilo Torres:</p>
+            <p>Con gran alegría los invitamos a celebrar los 60 años de nuestra querida institución. Este encuentro será una oportunidad única para reencontrarnos, recordar viejos tiempos y crear nuevos recuerdos.</p>
+            <p>Esperamos contar con su presencia en este evento tan especial. ¡No falten!</p>
+            <p>Atentamente,</p>
+            <p>El comité organizador.</p>
+        </div>
+
         <div class="info-section">
             <h2>Galería de recuerdos</h2>
             <p>Comparte tus fotos y recuerdos de tu época en la institución. ¡Pronto habilitaremos una galería interactiva para que todos podamos revivir esos momentos especiales!</p>
@@ -192,7 +250,7 @@
         const photosToShow = 6; // Cambia a 8 si quieres 4 fotos por fila
 
         // Intervalo de tiempo para rotar las imágenes (en milisegundos)
-        const rotationInterval = 10000; // 5 segundos
+        const rotationInterval = 10000; // 10 segundos
 
         // Función para cargar las imágenes desde el JSON
         async function loadGallery() {
